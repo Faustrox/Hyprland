@@ -86,6 +86,9 @@ class CMonitor {
     drmModeModeInfo             customDrmMode = {};
 
     CMonitorState               state;
+    
+    int extraRenderFrames = 0;
+
     CDamageRing                 damage;
 
     SP<Aquamarine::IOutput>     output;
